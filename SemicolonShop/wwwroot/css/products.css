@@ -1,2 +1,26 @@
-﻿body {
+﻿@media screen and (max-width:600px)
+{
+    .col-1 {
+        margin-left:20px;
+    }
+    .row {
+        margin-left:0px;
+        margin-right:13%;
+    }
+}
+
+@media screen and (max-width:580px)
+{
+    .row {
+        margin-left:0px;
+        margin-right:20%;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    .row {
+        margin-left: 0px;
+        margin-right: 35%;
+    }
 }
