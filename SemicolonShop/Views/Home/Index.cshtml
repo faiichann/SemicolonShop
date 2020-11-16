@@ -1,8 +1,21 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model SemicolonShop.Models.User
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row justify-content-md-center">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Login
+            </div>
+            <div class="card-body">
+                <form asp-controller="Home" asp-action="Login" method="post">
+                    <span>UserName :</span><input type="text" name="username" /><br />
+                    <span>Password : </span><input type="password" name="password" /><br />
+                    <input class="btn-sec4" name="Login" type="submit" value="Login" /><br />
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

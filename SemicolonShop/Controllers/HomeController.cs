@@ -11,22 +11,73 @@ namespace SemicolonShop.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        [NonAction]
+        public List<User> GetLoginUserList()
         {
-            _logger = logger;
+            return new List<User>{
+      new User{
+         UserID =1,
+         UFirstName= "aaa",
+         ULastName="bbb",
+         UserName="admin",
+         Password= "1234"
+      },
+            new User{
+         UserID =2,
+         UFirstName= "faii",
+         ULastName="chann",
+         UserName="faiichann",
+         Password= "1111"
+      },
+   };
         }
-
         public IActionResult Index()
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        public IActionResult Admin()
         {
+            ViewBag.Username = "Admin";
             return View();
         }
+        public IActionResult Home()
+        {
+            ViewBag.Username = "User";
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Login()
+        {
+            string btnCick = HttpContext.Request.Form["Login"].ToString();
+            if (btnCick == "Login")
+            {
+                string Username = HttpContext.Request.Form["username"].ToString();
+                string Password = HttpContext.Request.Form["password"].ToString();
+                //var login = (from e in GetLoginUserList()
+                //             where e.UserName == Username &&
+                //             e.Password == Password
+                //             select e).FirstOrDefault();
+               // if (login != null)
+               // {
+                    if (Username == "admin" && Password == "1234")
+                    {
+                        
+                        return RedirectToAction("Admin");
+                    }
+                    else
+                    {
+                        
+                        return RedirectToAction("Home");
+                    }
+                //}
+               // else
+                   // return View("Index");
+            }
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
