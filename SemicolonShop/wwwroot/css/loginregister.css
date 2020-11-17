@@ -1,0 +1,8 @@
+﻿.hero {
+    background-image:linear-gradient(rgba(0,0,0.4),rgba(0,0,0.4)),url(../lib/images/test.jpg);
+    height:100%;
+    width:100%;
+    background-position:center;
+    background-size:cover;
+    position:absolute;
+}
