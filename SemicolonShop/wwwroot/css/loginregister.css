@@ -6,3 +6,15 @@
     background-size:cover;
     position:absolute;
 }
+.form-box {
+    width:400px;
+    height:500px;
+    position:relative;
+    margin:6% auto;
+    background:#fff;
+    padding:5px;
+}
+.button-box {
+    width:220px;
+    margin:35px auto;
+}
