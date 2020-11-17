@@ -13,7 +13,7 @@
 }
 @media screen and (max-width:990px) {
     .form-box {
-        width:100%;
+        width:50%;
 
     }
 }
@@ -31,7 +31,6 @@
     position:relative;
     margin:6% auto;
     background:#fff;
-    padding:px;
 }
 
 .col-2 {
