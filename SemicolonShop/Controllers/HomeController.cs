@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SemicolonShop.Models;
-
+using Microsoft.AspNetCore.Mvc.Rendering;
 namespace SemicolonShop.Controllers
 {
     public class HomeController : Controller
@@ -45,6 +45,11 @@ namespace SemicolonShop.Controllers
             ViewBag.Username = "User";
             return View();
         }
+        public IActionResult Register()
+        {
+            ViewBag.Username = "User";
+            return View();
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -76,6 +81,19 @@ namespace SemicolonShop.Controllers
                    // return View("Index");
             }
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Register(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                //db.Add(user);
+                //await db.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            return View(user);
         }
 
 
