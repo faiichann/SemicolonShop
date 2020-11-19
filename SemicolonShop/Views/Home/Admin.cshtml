@@ -1,47 +1,45 @@
-﻿@model SemicolonShop.Models.User
-
+﻿@model SemicolonShop.Models.Product
 @{
     ViewData["Title"] = "Admin";
 }
 
 <h1>Hello @ViewBag.Username</h1>
-
+<div>
+    <a asp-action="Add">Add Product</a>
+</div>
 <div>
     <h4>User</h4>
     <hr />
-    @*<dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserID)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserID)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UFirstName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UFirstName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ULastName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ULastName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Password)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Password)
-        </dd>
-    </dl>*@
+    <table>
+        <tr>
+            <th>รหัส</th>
+            <th>ชนิด</th>
+            <th>ชื่อ</th>
+            <th>ราคา</th>
+            <th>คลัง</th>
+            <th>วันที่</th>
+            <th> </th>
+
+        </tr>
+        @foreach (var item in ViewBag.Product)
+        {
+    <tr>
+        <td>@item.ProductID</td>
+        <td>@item.ProductType</td>
+        <td>@item.ProductName</td>
+        <td>@item.ProductPrice</td>
+        <td>@item.ProductUnit</td>
+        <td>@item.DateUpdate</td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@item.ProductID">Edit</a> |
+            <a asp-action="Delete" asp-route-id="@item.ProductID">Delete</a>
+        </td>
+    </tr>
+
+        }
+    </table>
 </div>
 <div>
     <a asp-action="Index">Log out</a>
 </div>
+
