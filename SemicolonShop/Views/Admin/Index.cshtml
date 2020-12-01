@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h3>Admin Mannager</h3>
+<div class="tab">
+    <a asp-action>AAA</a>
+    <hr />
+    <button class="tablinks" onclick="openCity(event, 'Editproduct')">เพิ่ม-ลดสินค้า</button>
+    <hr />
+    <button class="tablinks" onclick="openCity(event, 'Delete')">ลบสินค้า</button>
+    <hr />
+</div>
+
+<div id="Dashboard" class="tabcontent">
+    <h4 style="color:blue;">Dashboard</h4>
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card-group">
+                    <div class="card" style="max-width:20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">ยอดขายของเดือนนี้</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="float:right; max-width:20rem;">
+                        <div class="card-body ">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="Delete" class="tabcontent">
+    <h4 class="text-danger">ลบสินค้า</h4>
+    <p>ไม่มีสินค้าให้ลบ</p>
+</div>

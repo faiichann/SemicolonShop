@@ -16,5 +16,9 @@ namespace SemicolonShop.Controllers
         {
             return View();
         }
+        public IActionResult Editproduct()
+        {
+            return View();
+        }
     }
 }
