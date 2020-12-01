@@ -1,0 +1,31 @@
+﻿@model SemicolonShop.Models.Data
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Admin Manager</h3>
+<div class="tab">
+
+    <a asp-action="Index" class="tablinks taplinks">ข้อมูลการขาย</a>
+    <hr />
+    <a asp-action="Editproduct" class="tablinks taplinks">เพิ่ม-ลดสินค้า</a>
+    <hr />
+    <a asp-action="Delete" class="tablinks taplinks">ลบสินค้า</a>
+    <hr />
+</div>
+
+<div id="Delete" class="tabcontent">
+    <h4 class="text-danger">ลบสินค้า</h4>
+    <p>ไม่มีสินค้าให้ลบ</p>
+</div>
+<div>
+   
+    <dl class="row">
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

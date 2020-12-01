@@ -3,13 +3,14 @@
 *@
 @{
 }
-<h3>Admin Mannager</h3>
+<h3>Admin Manager</h3>
 <div class="tab">
-    <a asp-action>AAA</a>
+
+    <a asp-action="Index" class="tablinks taplinks">ข้อมูลการขาย</a>
     <hr />
-    <button class="tablinks" onclick="openCity(event, 'Editproduct')">เพิ่ม-ลดสินค้า</button>
+    <a asp-action="Editproduct" class="tablinks taplinks">เพิ่ม-ลดสินค้า</a>
     <hr />
-    <button class="tablinks" onclick="openCity(event, 'Delete')">ลบสินค้า</button>
+    <a asp-action="Delete" class="tablinks taplinks">ลบสินค้า</a>
     <hr />
 </div>
 
@@ -26,12 +27,21 @@
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="float:right; max-width:20rem;">
-                        <div class="card-body ">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+                    <div class="col">
+                        <div class="card" style="max-width:20rem;">
+                            <div class="card-body ">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width:20rem;">
+                            <div class="card-body ">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -39,11 +49,4 @@
         </div>
     </div>
 
-</div>
-
-
-
-<div id="Delete" class="tabcontent">
-    <h4 class="text-danger">ลบสินค้า</h4>
-    <p>ไม่มีสินค้าให้ลบ</p>
 </div>
