@@ -1,4 +1,4 @@
-﻿/* Rectangle */
+﻿/* Banner1 */
 p.get {
     max-width:100%;
     position: absolute;
@@ -181,4 +181,45 @@ a.ban:hover {
         left: 5px;
         opacity: 0;
     }
+}
+
+/*Banner 2*/
+
+p.why {
+    position:absolute;
+    text-align:center;
+    left:37%;
+    margin-top:2%;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vw;
+    line-height: 135%;
+    color: #4C251B;
+}
+
+img.cabbage {
+    position: absolute;
+    max-width: 100%;
+    width: 13%;
+    margin-left:7%;
+}
+
+p.always {
+    position:absolute;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3vw;
+    line-height: 135%;
+    color: #4C251B;
+    margin-top:10%;
+}
+
+img.eclipse {
+    position:absolute;
+    max-width:100%;
+    width:45%;
+    margin-left:-27.5%;
+    margin-top:-15%;
 }
