@@ -1,25 +1,36 @@
 ﻿<link rel="stylesheet" href="~/css/Home.css" />
+<link rel="stylesheet" href="~/js/Home.js" />
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 <div class="container-fluid">
     <div style="height:auto" class="row">
         <img style=" width:100%;" src="~/lib/images/Rectangle.png" />
-            <p class="get">
-                GET
-            </p>
-            <p class="perc">
-                100%
-            </p>
-            <p class="natural">
-                NATURAL
-            </p>
-            <p class="fresh">
-                & FRESH FOOD
-            </p>
+        <p class="get">
+            GET
+        </p>
+        <p class="perc">
+            100%
+        </p>
+        <p class="natural">
+            NATURAL
+        </p>
+        <p class="fresh">
+            & FRESH FOOD
+        </p>
 
         <img class="ban1" src="~/lib/images/homeveget.png" />
         <p class="fban1">
             ส่งตรงความ “สดใหม่” ถึงมือคุณ ใช้รถติดตั้งด้วยระบบห้องเย็น<br />
             เพื่อให้ลูกค้าได้รับสินค้าที่สดใหม่ มีคุณภาพ
         </p>
-    </div>
+
+        <a asp-action="Products" class="ban">order now &nbsp; <i style="font-size:1vw;" class="fas fa-angle-right"></i> </a>
+
+        <div class="scroll">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+</div>
 </div>
