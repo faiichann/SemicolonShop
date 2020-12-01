@@ -1,3 +1,77 @@
-﻿.imgbanner {
-    height:20%
+﻿/* Rectangle */
+p.get {
+    max-width:100%;
+    position: absolute;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.5vw;
+    line-height: 135%;
+    color: #4C251B;
+    margin-top: 10%;
+    margin-left:6%
+}
+
+p.perc {
+    position: absolute;
+    max-width: 100%;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.5vw;
+    line-height: 135%;
+    color: #E27902;
+    margin-top: 10%;
+    margin-left: 15%
+}
+
+p.natural {
+    max-width: 100%;
+    position: absolute;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.5vw;
+    line-height: 135%;
+    color: #4C251B;
+    margin-top: 10%;
+    margin-left: 27%
+}
+
+p.fresh {
+    max-width: 100%;
+    position: absolute;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.5vw;
+    line-height: 135%;
+    color: #4C251B;
+    margin-top: 16%;
+    margin-left: 6%
+}
+
+img.ban1 {
+    position:absolute;
+    width:50%;
+    height:80%;
+    margin-top:5%;
+    margin-left:47%;
+}
+
+.container-fluid {
+    position:relative;
+}
+
+p.fban1 {
+    position: absolute;
+    max-width: 100%;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    line-height: 135%;
+    color: #4C251B;
+    margin-top:25%;
+    margin-left:6%;
 }
