@@ -38,7 +38,16 @@
     overflow:hidden;
     
 }
-.nav-link :hover {
-    background-color:white;
+
+a.nav-link1 {
+    display: block;
+    padding: .5rem 1rem;
+    color: #435E39;
+    cursor:pointer;
+}
+
+a.nav-link1:hover {
+    color: white;
+    text-decoration:none;
 }
 
