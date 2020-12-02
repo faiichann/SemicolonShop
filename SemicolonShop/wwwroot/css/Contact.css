@@ -1,0 +1,56 @@
+﻿/*Contact*/
+
+body {
+    max-width:1600px;
+    max-height:100px;
+}
+
+img.bg1 {
+    position: absolute;
+    max-width: 100%;
+    width: 50%;
+    margin-left: -14.7%;
+    margin-top: 9.5%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img.bg2 {
+    position: absolute;
+    max-width: 100%;
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+img.contactmain {
+    position:absolute;
+    width:70%;
+    margin-top:6%;
+    margin-left:1%;
+}
+
+img.contacthelp {
+    position:absolute;
+    width:10%;
+
+}
+
+@media screen and (max-width:1200px) {
+    img.b2 {
+        margin-left:60%;
+    }
+    img.contactmain {
+        width:65%;
+        margin-left:-5%;
+    }
+}
+
+/*Footer Contact*/
+
+img.footercontact {
+    position:absolute;
+    width:139%;
+    margin-left:-21.2%;
+    margin-top:2%;
+}
