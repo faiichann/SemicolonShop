@@ -9,6 +9,7 @@ namespace SemicolonShop.Models
     public class Product
     {
         public int ProductID { get; set; }
+        public string ProductImg{ get; set; }
         public string ProductType { get; set; }
         public string ProductName { get; set; }
         public string ProductPrice { get; set; }
