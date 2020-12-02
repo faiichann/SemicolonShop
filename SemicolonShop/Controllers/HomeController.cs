@@ -13,72 +13,72 @@ namespace SemicolonShop.Controllers
 {
     public class HomeController : Controller
     {
-        [NonAction]
-        public List<User> GetLoginUserList()
-        {
-            return new List<User>{
-      new User{
-         UserID =1,
-         UFirstName= "aaa",
-         ULastName="bbb",
-         UserName="admin",
-         Password= "1234"
-      },
-            new User{
-         UserID =2,
-         UFirstName= "faii",
-         ULastName="chann",
-         UserName="faiichann",
-         Password= "1111"
-      },
-   };
-        }
+   //     [NonAction]
+   //     public List<User> GetLoginUserList()
+   //     {
+   //         return new List<User>{
+   //   new User{
+   //      UserID =1,
+   //      UFirstName= "aaa",
+   //      ULastName="bbb",
+   //      UserName="admin",
+   //      Password= "1234"
+   //   },
+   //         new User{
+   //      UserID =2,
+   //      UFirstName= "faii",
+   //      ULastName="chann",
+   //      UserName="faiichann",
+   //      Password= "1111"
+   //   },
+   //};
+   //     }
 
-        public List<Product> GetProduct()
-        {
-            List<Product> pd = new List<Product>();
-            pd.Add(new Product { ProductID = 1, ProductType = "Vet", ProductName = "carrot", ProductPrice = "20" , ProductUnit = "15" , DateUpdate = "12/02/12"});
-            pd.Add(new Product { ProductID = 2, ProductType = "Me", ProductName = "pig", ProductPrice = "120", ProductUnit = "30", DateUpdate = "12/02/12" });
-            pd.Add(new Product { ProductID = 3, ProductType = "Vet", ProductName = "onion", ProductPrice = "53", ProductUnit = "30", DateUpdate = "12/02/12" });
-            return pd;
-        }
+   //     public List<Product> GetProduct()
+   //     {
+   //         List<Product> pd = new List<Product>();
+   //         pd.Add(new Product { ProductID = 1, ProductType = "Vet", ProductName = "carrot", ProductPrice = "20" , ProductUnit = "15" , DateUpdate = "12/02/12"});
+   //         pd.Add(new Product { ProductID = 2, ProductType = "Me", ProductName = "pig", ProductPrice = "120", ProductUnit = "30", DateUpdate = "12/02/12" });
+   //         pd.Add(new Product { ProductID = 3, ProductType = "Vet", ProductName = "onion", ProductPrice = "53", ProductUnit = "30", DateUpdate = "12/02/12" });
+   //         return pd;
+   //     }
 
         public IActionResult Index()
         {
             return View();
         }
-        public IActionResult Admin()
-        {
-            ViewBag.Username = "Admin";;
-            ViewBag.Product = GetProduct();
-            return View();
-        }
-        public IActionResult Home()
-        {
-            ViewBag.Username = "User";
-            return View();
-        }
-        public IActionResult Register()
-        {
-            ViewBag.Username = "User";
-            return View();
-        }
+        //public IActionResult Admin()
+        //{
+        //    ViewBag.Username = "Admin";;
+        //    ViewBag.Product = GetProduct();
+        //    return View();
+        //}
+        //public IActionResult Home()
+        //{
+        //    ViewBag.Username = "User";
+        //    return View();
+        //}
+        //public IActionResult Register()
+        //{
+        //    ViewBag.Username = "User";
+        //    return View();
+        //}
 
-        public IActionResult Add()
-        {
-            ViewBag.Product = GetProduct();
-            return View();
-        }
-        public IActionResult Edit()
-        {
-            ViewBag.Product = GetProduct();
-            return View();
-        }
-        public IActionResult Delete()
-        {
-            ViewBag.Product = GetProduct();
-            return View();
-        }
+        //public IActionResult Add()
+        //{
+        //    ViewBag.Product = GetProduct();
+        //    return View();
+        //}
+        //public IActionResult Edit()
+        //{
+        //    ViewBag.Product = GetProduct();
+        //    return View();
+        //}
+        //public IActionResult Delete()
+        //{
+        //    ViewBag.Product = GetProduct();
+        //    return View();
+        //}
         //[HttpPost]
         //[ValidateAntiForgeryToken]
         //public async Task<IActionResult> Add([Bind("ProductID,ProductType,ProductName,ProductPrice,ProductUnit")] Product product)
@@ -172,50 +172,50 @@ namespace SemicolonShop.Controllers
         //    return RedirectToAction(nameof(Index));
         //}
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Login()
-        {
-            string btnCick = HttpContext.Request.Form["Login"].ToString();
-            if (btnCick == "Login")
-            {
-                string Username = HttpContext.Request.Form["username"].ToString();
-                string Password = HttpContext.Request.Form["password"].ToString();
-                //var login = (from e in GetLoginUserList()
-                //             where e.UserName == Username &&
-                //             e.Password == Password
-                //             select e).FirstOrDefault();
-               // if (login != null)
-               // {
-                    if (Username == "admin" && Password == "1234")
-                    {
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public IActionResult Login()
+        //{
+        //    string btnCick = HttpContext.Request.Form["Login"].ToString();
+        //    if (btnCick == "Login")
+        //    {
+        //        string Username = HttpContext.Request.Form["username"].ToString();
+        //        string Password = HttpContext.Request.Form["password"].ToString();
+        //        //var login = (from e in GetLoginUserList()
+        //        //             where e.UserName == Username &&
+        //        //             e.Password == Password
+        //        //             select e).FirstOrDefault();
+        //       // if (login != null)
+        //       // {
+        //            if (Username == "admin" && Password == "1234")
+        //            {
                         
-                        return RedirectToAction("Admin");
-                    }
-                    else
-                    {
+        //                return RedirectToAction("Admin");
+        //            }
+        //            else
+        //            {
                         
-                        return RedirectToAction("Home");
-                    }
-                //}
-               // else
-                   // return View("Index");
-            }
-            return View();
-        }
+        //                return RedirectToAction("Home");
+        //            }
+        //        //}
+        //       // else
+        //           // return View("Index");
+        //    }
+        //    return View();
+        //}
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Register(User user)
-        {
-            if (ModelState.IsValid)
-            {
-                //db.Add(user);
-                //await db.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
-            return View(user);
-        }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public IActionResult Register(User user)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        //db.Add(user);
+        //        //await db.SaveChangesAsync();
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View(user);
+        //}
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
