@@ -50,7 +50,7 @@ namespace SemicolonShop
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=profileuser}/{action=Personal}/{id?}");
             });
         }
     }
