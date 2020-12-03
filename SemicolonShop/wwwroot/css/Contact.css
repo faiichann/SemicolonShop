@@ -8,6 +8,124 @@
     border-radius:20px;
 }
 
+@media screen and (max-width:991px) {
+    a.contactclick {
+        margin-top:6%!important;
+    }
+    .card {
+        margin-left:0%!important;
+        margin-top:15%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        width:100%;
+        margin-left:0%!important;
+        margin-top:20%;
+    }
+    a.contactclick {
+        margin-top: 9.5% !important;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .card {
+        width: 100%;
+        margin-left:0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    p.help, p.helpdetail, a.contactclick, p.contactEtc, p.contactQAhead, p.contactQ, p.contactA, .verticleline {
+        opacity:0;
+        font-size:0vw;
+    }
+    .card {
+        width:80%;
+        margin-left:12%!important;
+    }
+
+    p.helpdetail {
+        display:none!important;
+    }
+
+    p.contactus {
+        font-size:2.5vw!important;
+        margin-left:-5%!important;
+    }
+
+    p.contactTel {
+        font-size: 1.9vw !important;
+        margin-left: -65% !important;
+    }
+    p.contactform  {
+        font-size:1.8vw!important;
+        margin-left:-60%!important;
+        display:block !important;
+    }
+    p.contactform2 {
+        font-size: 1.8vw !important;
+        margin-left: -60% !important;
+        display: block !important;
+        margin-top:-10%;
+    }
+    input.contactinput {
+        margin-left: -35% !important;
+        display: block;
+        float: none !important;
+        width: 100% !important;
+    }
+    input.contactinput2 {
+        margin-left: -35% !important;
+        display: block;
+        float: none !important;
+        width: 100% !important;
+        margin-top:-10%;
+    }
+    input.contactDes {
+        margin-left: -60% !important;
+        display: block;
+        float: none !important;
+        width: 130% !important;
+        height:60px;
+        margin-top: -10%;
+    }
+
+    button.contactbtn {
+        margin-top: -15% !important;
+        position: absolute;
+        margin-left:-15%!important;
+    }
+    button.contactbtn2 {
+        margin-top: -15% !important;
+        position: absolute;
+        margin-left:15%!important;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    button.contactbtn {
+        margin-top: -20% !important;
+        position: absolute;
+        margin-left: -23% !important;
+    }
+
+    button.contactbtn2 {
+        margin-top: -20% !important;
+        position: absolute;
+        margin-left: 12% !important;
+    }
+}
+
+@media screen and (max-width:353px) {
+    .card {
+        width: 100%;
+        margin-left: 0% !important;
+    }
+}
+
 .col-4 {
     max-width:30%;
 }
@@ -124,7 +242,24 @@ p.contactform {
     float:left;
 }
 
+p.contactform2 {
+    display: contents;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 200%;
+    color: #435E39;
+    float: left;
+}
+
 input.contactinput {
+    border-radius: 17px;
+    float: right;
+    width: 87%;
+    font-size: 1vw;
+}
+input.contactinput2 {
     border-radius: 17px;
     float: right;
     width: 87%;
@@ -141,9 +276,9 @@ input.contactDes {
     padding-top:3%;
 }
 
-button.contactbtn {
-    padding-right:15px;
-    padding-left:15px;
+button.contactbtn, button.contactbtn2 {
+    padding-right: 15px;
+    padding-left: 15px;
     border: 2px solid #435E39;
     font-size: 0.9vw;
     font-family: Kanit;
@@ -152,14 +287,18 @@ button.contactbtn {
     line-height: 200%;
     color: #435E39;
     border-radius: 30px;
-    background-color:#FFFFFF;
-    text-align:center;
-    cursor:pointer;
-    outline:none;
-    margin-left:35%;
-    margin-top:1.5%;
+    background-color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    margin-left: 35%;
+    margin-top: 1.5%;
 }
 button.contactbtn:hover {
+    background-color:#435E39;
+    color:#FFFFFF;
+}
+button.contactbtn2:hover {
     background-color:#435E39;
     color:#FFFFFF;
 }
@@ -223,4 +362,8 @@ p.contactmodal2 {
     background-color:#FFFFFF;
     color:#435E39;
     outline:none;
+}
+
+.form-contact {
+
 }
