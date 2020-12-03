@@ -9,10 +9,90 @@
       background-position: center;
       width:100%;
       height:100%;"></body>
-      @*<div class="bodycontact">*@
-<div class="container">
     <div class="card">
+        <div class="container">
+            <div style="height:100%;" class="row justify-content-center">
+                <div class="col-4">
+                    <p class="help">
+                        HELP
+                    </p>
+                    <p class="helpdetail">
+                        - ต้องการตรวจสอบประวัติการสั่งซื้อ
+                    </p>
+                    <a class="contactclick" asp-action="ประวัติการสั่งซื้อ">Click</a><br />
+                    <p class="helpdetail">
+                        - ต้องการแก้ไขตะกร้า
+                    </p>
+                    <a class="contactclick" asp-action="แก้ไขตะกร้า">Click</a><br />
+                    <p class="helpdetail">
+                        - ต้องการแก้ไขที่อยู่ในการจัดส่งสินค้า
+                    </p>
+                    <a class="contactclick" asp-action="ที่อยู่ในprofile">Click</a><br />
+                    <p class="helpdetail">
+                        - อื่นๆ
+                    </p><br />
+                    <p style="margin-left:3%;" class="contactEtc">
+                        กรุณาติดต่อที่เบอร์ +66 2456 3789 หรือ<br />
+                        ติดต่อทางอีเมลล์โดย กรอกข้อมูลทางด้านขวามือ
+                    </p>
 
+                    <p class="contactQAhead">
+                        Q&A
+                    </p>
+
+                    <p class="contactQ">
+                        Q : จัดส่งสิงค้าอย่างไร ใช้เวลาในการจัดส่งกี่วัน ?
+                    </p>
+                    <p class="contactA">
+                        A : จัดส่งสินค้าด้วยรถติดตั้งระบบห้องเย็น กรุงเทพและปริมณฑล 1-2 วัน ต่างจังหวัด 2-3 วัน
+                    </p>
+                    <p class="contactQ">
+                        Q : ต้องการซื้อในปริมาณมากๆในราคาส่งได้ไหม ?
+                    </p> 
+                    <p class="contactA">
+                        A : สามารถทำได้ หากต้องหารซื้อในราคาส่ง กรุณาติดต่อเจ้าหน้าที่ผ่านช่องทางด้านขวามือ
+                    </p>
+                </div>
+
+                
+
+                <div style="max-height:100%;" class="col-1">
+                    <div class="verticleline"></div>
+                </div>
+
+                <div class="col-7">
+                    <p class="contactus">
+                        CONTACT US
+                    </p>
+
+                    <p class="contactTel">
+                        Tel : +66 2456 3789
+                    </p>
+                    
+                    <form>
+                        <p class="contactform">
+                            Name
+                        </p>
+                        <input type="text" class="contactinput form-control" /><br /><br />
+                        <p class="contactform">
+                            E-Mail
+                        </p>
+                        <input type="text" class="contactinput form-control" /><br /><br />
+                        <p class="contactform">
+                            Tel
+                        </p>
+                        <input type="text" class="contactinput form-control" /><br /><br />
+                        <p class="contactform">
+                            Description
+                        </p><br />
+                        <input type="text" class="contactDes form-control" />
+                    </form><br />
+                    <button type="button" class="contactbtn" data-toggle="modal" data-target="contactmodal">Submit</button>
+                    <button type="button" class="contactbtn" onClick="window.location.reload();">Reset</button>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
 
