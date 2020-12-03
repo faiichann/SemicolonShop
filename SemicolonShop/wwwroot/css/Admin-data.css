@@ -1,8 +1,5 @@
 ﻿body {
 }
-.topnav-right{
-    float:right;
-}
 * {
     box-sizing: border-box
 }
@@ -38,15 +35,7 @@
     overflow:hidden;
     
 }
-.nav-link :hover {
-    background-color:white;
-}
 .container{
     width:100%;
 }
-.topright {
-    float: right;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-}
+
