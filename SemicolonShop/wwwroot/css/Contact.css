@@ -142,7 +142,8 @@ input.contactDes {
 }
 
 button.contactbtn {
-    padding: 3%;
+    padding-right:15px;
+    padding-left:15px;
     border: 2px solid #435E39;
     font-size: 0.9vw;
     font-family: Kanit;
@@ -151,8 +152,75 @@ button.contactbtn {
     line-height: 200%;
     color: #435E39;
     border-radius: 30px;
+    background-color:#FFFFFF;
+    text-align:center;
     cursor:pointer;
+    outline:none;
+    margin-left:35%;
+    margin-top:1.5%;
 }
 button.contactbtn:hover {
-    
+    background-color:#435E39;
+    color:#FFFFFF;
+}
+
+.modal-footer {
+    border-top:0;
+    display:block;
+}
+
+.modal-content {
+    background-color:#435E39;
+    border-radius:10px;
+}
+
+.modal-body {
+    padding:0;
+}
+
+img.contactcorrect {
+    width:10%;
+    margin-top:4%;
+}
+
+p.contactmodal1 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5vw;
+    line-height: 200%;
+    color: #FFFFFF;
+    margin-top:1%;
+}
+
+p.contactmodal2 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 200%;
+    color: #FFFFFF;
+}
+
+.contactmodalbtn {
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: #435E39;
+    color: #FFFFFF;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9vw;
+    line-height: 200%;
+    padding-right:10px;
+    padding-left:10px;
+    outline:none;
+    cursor:pointer;
+    margin-left:32%;
+}
+
+.contactmodalbtn:hover {
+    background-color:#FFFFFF;
+    color:#435E39;
+    outline:none;
 }
