@@ -47,9 +47,26 @@
     }
 }
 
-@media screen and (max-width:450px) {
-    .button-box {
-        width: 30%;
+@media screen and (max-width:400px) {
+    .toggle-btn {
+        padding: 5px 10px !important;
+    }
+
+    #btn {
+        width: 80px !important;
+        left: 45% !important;
+    }
+}
+
+@media screen and (max-width:255px) {
+    .toggle-btn {
+        padding: 2px 5px !important;
+        font-size:3.9vw;
+    }
+
+    #btn {
+        width: 80px !important;
+        left: 45% !important;
     }
 }
 

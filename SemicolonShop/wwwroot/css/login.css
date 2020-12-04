@@ -46,9 +46,13 @@
     }
 }
 
-@media screen and (max-width:450px) {
-    .button-box {
-        width:30%;
+
+@media screen and (max-width:400px) {
+    .toggle-btn {
+        padding:5px 10px !important;
+    }
+    #btn {
+        width:70px!important;
     }
 }
 
