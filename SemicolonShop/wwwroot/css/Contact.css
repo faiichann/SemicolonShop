@@ -124,6 +124,37 @@
         width: 100%;
         margin-left: 0% !important;
     }
+    p.contactus {
+        font-size:3vw!important;
+    }
+    p.contactTel, p.contactform, p.contactform2, p.contactDes{
+        font-size:2.5vw!important;
+    }
+}
+
+@media screen and (max-width:288px) {
+    p.contactus {
+        margin-top: -285% !important;
+        margin-left: 28% !important;
+    }
+    p.contactform {
+        margin-left:-40%!important;
+    }
+    p.contactTel {
+        margin-left:-30%!important;
+    }
+    p.contactform2 {
+        margin-left: -40% !important;
+    }
+    input.contactinput {
+        margin-left:-7%!important;
+    }
+    input.contactinput2 {
+        margin-left: -7% !important;
+    }
+    input.contactDes {
+        margin-left: -7% !important;
+    }
 }
 
 .col-4 {
