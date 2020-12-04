@@ -1,0 +1,51 @@
+﻿.font{
+    font-family:Kanit;
+    padding-top:50px;
+}
+.font2{
+    font-family: Kanit;
+    
+}
+.card1{
+    width:100%;
+    border:1px solid #000000;
+
+}
+
+.card2 {
+    width: 80%;
+    margin-left:10%;
+}
+.card3{
+    width: 50%;
+    border: 1px solid #000000;
+    margin-left:20%;
+    justify-content:center;
+}
+.img1{
+    padding-top:10px;
+    padding-left:150px;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+.img2 {
+    padding-top: 10px;
+    padding-right: 100px;
+    padding-left:150px;
+    padding-bottom: 10px;
+}
+.con{
+    border:1px solid #000000;
+    border-radius:30px;
+    width:15%;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+.cancel {
+    border: 1px solid #000000;
+    width: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: .2%;
+    padding-bottom: .2%;
+}
