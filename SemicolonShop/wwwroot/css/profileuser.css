@@ -1,6 +1,52 @@
-﻿img.imagepersonal {
-    position:absolute;
-    max-width:60%;
-    margin-left:-200%;
-    margin-top:42%;
+﻿.card1 {
+    width: 20%;
+    height:80vh;
+    background-color: #926E50;
+    box-shadow: 4px 6px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top:7%;
+    text-align:center;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:30px;
+    padding-bottom:30px;
+    margin-left:-8%;
+}
+
+img.imgpersonal {
+    width:100%;
+    height:20vh;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+a.changeimage {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8vw;
+    line-height: 27px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF; 
+}
+
+a.profilelink {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 30px;
+    outline: none;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 4%;
+}
+a.profilelink:hover {
+    background-color:#FFFFFF;
+    color:#4C251B;
+    outline:none;
 }

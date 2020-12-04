@@ -3,12 +3,16 @@
     ViewData["Title"] = "Personal";
 }
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-3">
-            <img class="imagepersonal" src="~/lib/images/test.jpg" /><br />
+    <div class="card1">
+        <div class="container">
+            <center>
+                <img class="imgpersonal" src="~/lib/images/test.jpg" /><br />
+                <a class="changeimage" href="#">แก้ไขรูปภาพ</a><br /><br />
+                <a asp-action="Personal" class="profilelink">ข้อมูลส่วนตัว</a><br /><br /><br />
+                <a asp-action="Address" class="profilelink">ที่อยู่ของฉัน</a><br /><br /><br />
+                <a asp-action="Orderlist" class="profilelink">รายการสั่งซื้อ</a><br /><br /><br />
+                <a asp-action="logout" class="profilelink">ออกจากระบบ</a><br /><br />
 
+            </center>
         </div>
     </div>
-</div>
-
