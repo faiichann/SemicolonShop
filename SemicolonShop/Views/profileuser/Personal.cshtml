@@ -2,17 +2,68 @@
 @{
     ViewData["Title"] = "Personal";
 }
+<div class="row justify-content-center">
+    <div class="col-3">
+        <div class="card1">
+            <div class="container">
+                <center>
+                    <img class="imgpersonal" src="~/lib/images/test.jpg" /><br />
+                    <a class="changeimage" href="#">แก้ไขรูปภาพ</a><br /><br />
+                    <a asp-action="Personal" class="profilelink">ข้อมูลส่วนตัว</a><br /><br /><br />
+                    <a asp-action="Address" class="profilelink">ที่อยู่ของฉัน</a><br /><br /><br />
+                    <a asp-action="Orderlist" class="profilelink">รายการสั่งซื้อ</a><br /><br /><br />
+                    <a asp-action="logout" class="profilelink">ออกจากระบบ</a><br />
 
-    <div class="card1">
-        <div class="container">
-            <center>
-                <img class="imgpersonal" src="~/lib/images/test.jpg" /><br />
-                <a class="changeimage" href="#">แก้ไขรูปภาพ</a><br /><br />
-                <a asp-action="Personal" class="profilelink">ข้อมูลส่วนตัว</a><br /><br /><br />
-                <a asp-action="Address" class="profilelink">ที่อยู่ของฉัน</a><br /><br /><br />
-                <a asp-action="Orderlist" class="profilelink">รายการสั่งซื้อ</a><br /><br /><br />
-                <a asp-action="logout" class="profilelink">ออกจากระบบ</a><br /><br />
-
-            </center>
+                </center>
+            </div>
         </div>
     </div>
+
+    <div class="col-9">
+        <div class="card2">
+            <div class="container">
+                <p class="hello">
+                    Hello,
+                </p>
+                <p class="profilenameID">
+                    INEEDSLEEP
+                </p><br />
+                <p class="profilepersonal">
+                    ข้อมูลส่วนตัว
+                </p>
+                <a asp-action="ChangePersonal" class="profilechangepersonal">
+                    แก้ไขข้อมูลส่วนตัว <img class="imgchangepersonal" src="~/lib/images/profilechangepersonal.png" />
+                </a><br /><br />
+
+                <p class="profilepersonaldetail">
+                    วันเกิด
+                </p>
+                <p class="profilepersonaldata">
+                    xx/xx/xxxx
+                </p><br /><br />
+                <p class="profilepersonaldetail">
+                    เบอร์โทรติดต่อ
+                </p>
+                <p class="profilepersonaldata">
+                    0812345678
+                </p><br /><br />
+                <p class="profilepersonaldetail">
+                    อีเมล
+                </p>
+                <p class="profilepersonaldata">
+                    ineedsleep@hotmail.com
+                </p><br /><br />
+                <p class="profilepersonaldetail">
+                    รหัสผ่าน
+                </p>
+                <p class="profilepersonaldata">
+                    ********
+                </p><br /><br />
+                <a asp-action="Changepassword" class="profilechangepassword">
+                    แก้ไขรหัสผ่าน
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
