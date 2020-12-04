@@ -32,26 +32,28 @@
 .tabcontent {
   display: none;
   padding: 80px 12px;
+  margin-left:3%;
 }
 
 .col-3-shop {
-    padding-left:20px;
+    padding-left:0px;
 }
 
 .card {
     width:80%;
     border-radius:15px;
-    padding:15px;
+    padding:10px;
 }
 img.card-inner {
     height:150px;
     object-fit:cover;
     border-radius:10px;
+    width:100%;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
