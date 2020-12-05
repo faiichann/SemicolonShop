@@ -139,6 +139,16 @@ img.imgchangepersonal {
     outline:none;
     padding-right:3px;
 }
+img.imgsavepersonal {
+    display: inline;
+    float: right;
+    width: 27%;
+    margin-top: 15%;
+    margin-left: 6%;
+    text-decoration: none;
+    outline: none;
+    padding-right: 3px;
+}
 
 p.profilepersonaldetail {
     display:inline;
@@ -231,7 +241,10 @@ a.profilechangepassword {
         height:95%;
     }
     img.imgchangepersonal {
-        margin-top:10%
+        margin-top:10%;
+    }
+    img.imgsavepersonal {
+        margin-top:18%;
     }
 }
 
@@ -258,7 +271,10 @@ a.profilechangepassword {
         height: 95%;
     }
     img.imgchangepersonal {
-        margin-top: 12%
+        margin-top: 12%;
+    }
+    img.imgsavepersonal {
+        margin-top:24%;
     }
 }
 
@@ -269,6 +285,12 @@ a.profilechangepassword {
     }
     .card2 {
         width:100%;
+    }
+    img.imgchangepersonal {
+        margin-top:15%;
+    }
+    img.imgsavepersonal {
+        margin-top:26%;
     }
 }
 
@@ -509,4 +531,54 @@ table.ordertable {
     height:350px;
     display:block;
     overflow-y:auto;
+}
+
+/*ChangePersonal*/
+
+input.inputchangepersonal {
+    display: inline;
+    width: 70%;
+    margin-top: -1%;
+    float: right;
+    margin-right: 15%;
+}
+
+input.changepassword {
+    display: inline;
+    width: 70%;
+    margin-top: -1%;
+    float: right;
+}
+
+input.submitchangepersonal {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 30px;
+    background-color: #4C251B;
+    border: 2px solid #4C251B;
+    cursor:pointer;
+    padding-right:10px;
+    padding-left:10px;
+    outline:none;
+    margin-top:7%;
+    margin-left:35%;
+}
+
+input.submitchangepersonal:hover {
+    background-color:#FFFFFF;
+    color:#4C251B;
+    outline:none;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

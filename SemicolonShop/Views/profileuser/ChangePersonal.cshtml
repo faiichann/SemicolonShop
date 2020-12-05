@@ -1,6 +1,55 @@
-﻿
+﻿<link rel="stylesheet" href="~/css/profileuser.css" />
 @{
     ViewData["Title"] = "ChangePersonal";
 }
 
+<div class="row justify-content-center">
+    <div class="col-3">
+        <div class="card1">
+            <div class="container">
+                <center>
+                    <img class="imgpersonal" src="~/lib/images/test.jpg" /><br />
+                    <a class="changeimage" href="#">แก้ไขรูปภาพ</a><br /><br />
+                    <a asp-action="Personal" class="profilelink">ข้อมูลส่วนตัว</a><br /><br /><br />
+                    <a asp-action="Address" class="profilelink">ที่อยู่ของฉัน</a><br /><br /><br />
+                    <a asp-action="Orderlist" class="profilelink">รายการสั่งซื้อ</a><br /><br /><br />
+                    <a asp-action="logout" class="profilelink">ออกจากระบบ</a><br />
+
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-9">
+        <div class="card2">
+            <div class="container">
+                <p class="hello">
+                    Hello,
+                </p>
+                <p class="profilenameID">
+                    INEEDSLEEP
+                </p><br />
+                <p class="profilepersonal">
+                    ข้อมูลส่วนตัว
+                </p><br /><br />
+                          <form asp-action="Personal" method="post">
+                              <p class="profilepersonaldetail">
+                                  วันเกิด
+                              </p>
+                              <input type="text" class="inputchangepersonal form-control" /><br /><br />
+                              <p class="profilepersonaldetail">
+                                  เบอร์ติดต่อ
+                              </p>
+                              <input type="number" class="inputchangepersonal form-control" /><br /><br />
+                              <p class="profilepersonaldetail">
+                                  อีเมล
+                              </p>
+                              <input type="email" class="inputchangepersonal form-control" /><br />
+                              <input type="submit" class="submitchangepersonal" value="ยืนยันการแก้ไข"/>
+                          </form>
+
+            </div>
+            </div>
+        </div>
+    </div>
 
