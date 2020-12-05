@@ -4,37 +4,53 @@
     ViewData["Title"] = "Editproduct";
 }
 
-<h3>Admin Manager</h3>
 
-<div class="tab">
 
-    <a asp-action="Index" class="tablinks taplinks">ข้อมูลการขาย</a>
-    <hr />
-    <a asp-action="Editproduct" class="tablinks taplinks">เพิ่ม-ลดสินค้า</a>
-    <hr />
-    <a asp-action="Delete" class="tablinks taplinks">ลบสินค้า</a>
-    <hr />
-</div>
-
-<div id="Delete" class="tabcontent">
-    <h4 class="">เพิ่ม-ลดสินค้า</h4>
-    <p>สินค้าหมด</p>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Editproduct">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+<div class="row justify-content-center">
+    <div class="col-3">
+        <div class="card1">
+            <div class="container">
+                <center>
+                    <a asp-action="Data" class="profilelink">ข้อมูลยอดขาย</a><br /><br /><br />
+                    <a asp-action="Editproduct" class="profilelink">เพิ่มสินค้า</a><br /><br /><br />
+                    <a asp-action="Delete" class="profilelink">ลบสินค้า</a><br /><br /><br />
+                </center>
             </div>
-        </form>
+        </div>
+    </div>
+
+    <div class="col-9">
+        <div class="card2">
+            <div class="container">
+                <p class="hello">
+                    Admin Manager
+                </p>
+                <br />
+                <p class="profilepersonal">
+                    เพิ่มสินค้า
+                </p><br /><br />
+                <p class="profilepersonaldetail">
+                    รหัสสินค้า
+                </p>
+                <input type="number" class="inputchangepersonal form-control" /><br /><br /><br />
+                <p class="profilepersonaldetail">
+                    ชื่อสินค้า
+                </p>
+                <input type="text" class="inputchangepersonal form-control" /><br /><br /><br />
+                <p class="profilepersonaldetail">
+                    ราคา
+                </p>
+                <input type="number" class="inputchangepersonal form-control" /><br /><br /><br />
+                <p class="profilepersonaldetail">
+                    จำนวน
+                </p>
+                <input type="number" class="inputchangepersonal form-control" /><br /><br /><br />
+                <p class="profilepersonaldetail">
+                    รูปสินค้า
+                </p>
+                <input type="file" class="inputchangepersonal file" id="myFile" name="filename">
+                <input type="submit" class="submitchangepersonal" value="ยืนยันการแก้ไข" />
+            </div>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

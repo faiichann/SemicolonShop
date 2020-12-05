@@ -4,29 +4,61 @@
     ViewData["Title"] = "Delete";
 }
 
-<h3>Admin Manager</h3>
+<div class="row justify-content-center">
+    <div class="col-3">
+        <div class="card1">
+            <div class="container">
+                <center>
+                    <a asp-action="Data" class="profilelink">ข้อมูลยอดขาย</a><br /><br /><br />
+                    <a asp-action="Editproduct" class="profilelink">เพิ่มสินค้า</a><br /><br /><br />
+                    <a asp-action="Delete" class="profilelink">ลบสินค้า</a><br /><br /><br />
+                </center>
+            </div>
+        </div>
+    </div>
 
-<div class="tab">
-
-    <a asp-action="Index" class="tablinks taplinks">ข้อมูลการขาย</a>
-    <hr />
-    <a asp-action="Editproduct" class="tablinks taplinks">เพิ่ม-ลดสินค้า</a>
-    <hr />
-    <a asp-action="Delete" class="tablinks taplinks">ลบสินค้า</a>
-    <hr />
-</div>
-
-<div id="Delete" class="tabcontent">
-    <h4 class="text-danger">ลบสินค้า</h4>
-    <p>ไม่มีสินค้าให้ลบ</p>
-</div>
-<div>
-   
-    <dl class="row">
-    </dl>
-
-    <form asp-action="Delete">
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+    <div class="col-9">
+        <div class="card2">
+            <div class="container">
+                <p class="hello">
+                    Admin Manager
+                </p>
+                <br />
+                <p class="profilepersonal">
+                    ลบสินค้า
+                </p><br /><br />
+                <div style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <th>หมายเลขสินค้า</th>
+                            <th>ชื่อสินค้า</th>
+                            <th>ราคาสินค้า</th>
+                            <th>จำนวนสินค้า</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                            <td>50</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Adam</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>50</td>
+                            <td></td>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
