@@ -1,1 +1,83 @@
-﻿
+﻿<link rel="stylesheet" href="~/css/profileuser.css" />
+@{
+    ViewData["Title"] = "Orderlist";
+}
+
+<div class="row justify-content-center">
+    <div class="col-3">
+        <div class="card1">
+            <div class="container">
+                <center>
+                    <img class="imgpersonal" src="~/lib/images/test.jpg" /><br />
+                    <a class="changeimage" href="#">แก้ไขรูปภาพ</a><br /><br />
+                    <a asp-action="Personal" class="profilelink">ข้อมูลส่วนตัว</a><br /><br /><br />
+                    <a asp-action="Address" class="profilelink">ที่อยู่ของฉัน</a><br /><br /><br />
+                    <a asp-action="Orderlist" class="profilelink">รายการสั่งซื้อ</a><br /><br /><br />
+                    <a asp-action="logout" class="profilelink">ออกจากระบบ</a><br />
+
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-9">
+        <div class="card2">
+            <div class="container">
+                <p class="hello">
+                    Hello,
+                </p>
+                <p class="profilenameID">
+                    INEEDSLEEP
+                </p><br />
+                    <table class="ordertable">
+                        <thead>
+                            <tr>
+                                <th class="orderth">
+                                    <p class="profilepersonal">
+                                        วันที่สั่งซื้อ
+                                    </p>
+                                </th>
+                                <th class="orderth">
+                                    <p class="profileNoOrder">
+                                        หมายเลขคำสั่งซื้อ
+                                    </p>
+                                </th>
+                                <th class="orderth">
+                                    <p class="profileOrderdetail">
+                                        รายละเอียด
+                                    </p>
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @*@foreach (var item in Model)*@
+                            @*{*@
+                            <tr>
+                                <td>
+                                    <p class="orderlistdetail1">
+                                        25 พย 2563
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="orderlistdetail2">
+                                        0001
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="orderlistdetail3">
+                                        ข้าวเหนียวไก่ย่างขายตอนสว่าง
+                                    </p>
+                                </td>
+                            </tr>
+                           
+                            @*}*@
+                        </tbody>
+                    </table>
+
+            </div>
+            </div>
+
+            </div>
+
+    </div>

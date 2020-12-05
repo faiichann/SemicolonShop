@@ -1,7 +1,84 @@
-﻿
+﻿<link rel="stylesheet" href="~/css/profileuser.css" />
 @{
     ViewData["Title"] = "Address";
 }
 
-<h1>Address</h1>
+<div class="row justify-content-center">
+    <div class="col-3">
+        <div class="card1">
+            <div class="container">
+                <center>
+                    <img class="imgpersonal" src="~/lib/images/test.jpg" /><br />
+                    <a class="changeimage" href="#">แก้ไขรูปภาพ</a><br /><br />
+                    <a asp-action="Personal" class="profilelink">ข้อมูลส่วนตัว</a><br /><br /><br />
+                    <a asp-action="Address" class="profilelink">ที่อยู่ของฉัน</a><br /><br /><br />
+                    <a asp-action="Orderlist" class="profilelink">รายการสั่งซื้อ</a><br /><br /><br />
+                    <a asp-action="logout" class="profilelink">ออกจากระบบ</a><br />
 
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-9">
+        <div class="card2">
+            <div class="container">
+                <p class="hello">
+                    Hello,
+                </p>
+                <p class="profilenameID">
+                    INEEDSLEEP
+                </p><br />
+                <p class="profilepersonal">
+                    ที่อยู่สำหรับจัดส่ง
+                </p>
+                <a asp-action="ChangePersonal" class="profilechangepersonal">
+                    แก้ไขที่อยู่ของฉัน <img class="imgchangepersonal" src="~/lib/images/profilechangepersonal.png" />
+                </a><br /><br />
+                <p class="profilepersonaldetail">
+                    ชื่อ-นามสกุล
+                </p>
+                <p class="profilepersonaldata">
+                    ง่วงจัง อิหยังหวะ
+                </p><br /><br />
+                <p class="profilepersonaldetail">
+                    เบอร์ติดต่อ
+                </p>
+                <p class="profilepersonaldata">
+                    0812345678
+                </p><br /><br />
+                <p class="profilepersonaldetail">
+                    ที่อยู่
+                </p>
+                <p class="profilepersonaldata">
+                    21 ถ.พุทธบูชา ซ.พุทธบูชา99
+                </p><br /><br />
+                <p class="profilepersonaldetail">
+                    แขวง/ตำบล
+                </p>
+                <p class="profilepersonaldata">
+                    อายุ15มาเป็นสาวรำวง
+                </p><br /><br />
+                <p class="profilepersonaldetail">
+                    เขต/อำเภอ
+                </p>
+                <p class="profilepersonaldata">
+                    บางก็รักบางก็ไม่รัก
+                </p><br /><br />
+                <p class="profilepersonaldetail">
+                    จังหวัด
+                </p>
+                <p class="profilepersonaldata">
+                    กรุงเทพมหานคร
+                </p><br /><br />
+                <p class="profilepersonaldetail">
+                    รหัสไปรษณีย์
+                </p>
+                <p class="profilepersonaldata">
+                    12121
+                </p><br /><br />
+            </div>
+        </div>
+    </div>
+
+    </div>

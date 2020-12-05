@@ -1,4 +1,6 @@
-﻿.card1 {
+﻿/*Personal*/
+
+.card1 {
     width: 100%;
     height:92%;
     background-color: #926E50;
@@ -92,6 +94,27 @@ p.profilepersonal {
     color: #4C251B;
 }
 
+p.profileNoOrder {
+    display: inline;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3vw;
+    line-height: 39px;
+    color: #4C251B;
+    margin-left:-25%;
+}
+
+p.profileOrderdetail {
+    display: inline;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3vw;
+    line-height: 39px;
+    color: #4C251B;
+}
+
 a.profilechangepersonal {
     display: inline;
     font-family: Kanit;
@@ -127,6 +150,44 @@ p.profilepersonaldetail {
     color: #4C251B;
     float:left;
     margin-top:-1%;
+}
+
+p.orderlistdetail1 {
+    display: inline;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 250%;
+    color: #4C251B;
+    float: left;
+    margin-top: 5%;
+}
+
+p.orderlistdetail2 {
+    display: inline;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 250%;
+    color: #4C251B;
+    float: left;
+    margin-top: 5%;
+    margin-left:-6%;
+}
+
+p.orderlistdetail3 {
+    display: inline;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 250%;
+    color: #4C251B;
+    float: left;
+    margin-top: 5%;
+    margin-left: -15%;
 }
 
 p.profilepersonaldata {
@@ -231,8 +292,14 @@ a.profilechangepassword {
     p.profilepersonal {
         font-size:1.9vw;
     }
+    p.profileNoOrder {
+        font-size:1.9vw;
+    }
+    p.profileOrderdetail {
+        font-size:1.9vw;
+    }
     a.profilechangepersonal {
-        font-size:1.3vw;
+        font-size: 1.3vw;
     }
     p.profilepersonaldetail {
         font-size:1.7vw;
@@ -245,16 +312,27 @@ a.profilechangepassword {
     }
 }
 
+@media screen and (max-width:500px) {
+    p.orderlistdetail1, p.orderlistdetail2, p.orderlistdetail3 {
+        font-size:1.7vw;
+    }
+}
+
 @media screen and (max-width:480px) {
     .card1 {
         width:120%;
     }
 }
 
+@media screen and (max-width:383px) {
+    .card1 {
+        height:70vh;
+    }
+}
+
 @media screen and (max-width:350px) {
     .card1 {
         width:170%;
-        height:
     }
     .card2 {
         width:100%;
@@ -279,6 +357,13 @@ a.profilechangepassword {
     p.profilepersonal {
         font-size: 2.1vw;
     }
+    p.profileNoOrder {
+        font-size:2vw;
+        margin-left:-10%;
+    }
+    p.profileOrderdetail {
+        font-size: 2.1vw;
+    }
 
     a.profilechangepersonal {
         font-size: 1.5vw;
@@ -294,6 +379,20 @@ a.profilechangepassword {
 
     a.profilechangepassword {
         font-size: 1.5vw;
+    }
+    
+    p.orderlistdetail2 {
+        margin-left:17%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    img.imgpersonal {
+        width:120%;
+        margin-left:-10%;
+    }
+    a.profilelink {
+        font-size:1.1vw;
     }
 }
 
@@ -323,6 +422,12 @@ a.profilechangepassword {
     }
 
     p.profilepersonal {
+        font-size: 2.4vw;
+    }
+    p.profileNoOrder {
+        font-size:2.4vw;
+    }
+    p.profileOrderdetail {
         font-size: 2.4vw;
     }
 
@@ -368,6 +473,12 @@ a.profilechangepassword {
     p.profilepersonal {
         font-size: 1.7vw;
     }
+    p.profileNoOrder {
+        font-size:1.7vw;
+    }
+    p.profileOrderdetail {
+        font-size: 1.7vw;
+    }
 
     a.profilechangepersonal {
         font-size: 1.1vw;
@@ -384,4 +495,18 @@ a.profilechangepassword {
     a.profilechangepassword {
         font-size: 1.1vw;
     }
+}
+
+/*Orderlist*/
+
+th.orderth {
+    width: 1%;
+    display: table-cell;
+}
+
+
+table.ordertable {
+    height:350px;
+    display:block;
+    overflow-y:auto;
 }
