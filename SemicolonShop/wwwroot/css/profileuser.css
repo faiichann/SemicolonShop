@@ -332,6 +332,9 @@ a.profilechangepassword {
     a.profilechangepassword {
         font-size: 1.3vw;
     }
+    input.inputchangepersonal {
+        width:60%!important;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -468,6 +471,9 @@ a.profilechangepassword {
     a.profilechangepassword {
         font-size: 1.8vw;
     }
+    input.changeaddress {
+        width:55%;
+    }
 }
 
 @media screen and (max-width:288px) {
@@ -516,6 +522,9 @@ a.profilechangepassword {
 
     a.profilechangepassword {
         font-size: 1.1vw;
+    }
+    input.changepassword {
+        width:60%;
     }
 }
 
@@ -584,6 +593,32 @@ input.submitchangepersonal:hover {
     color:#4C251B;
     outline:none;
 }
+
+input.submitchangeaddress {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 30px;
+    background-color: #4C251B;
+    border: 2px solid #4C251B;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+    outline: none;
+    margin-top: 0%;
+    margin-left: 40%;
+}
+    input.submitchangeaddress:hover {
+        background-color: #FFFFFF;
+        color: #4C251B;
+        outline: none;
+    }
+
+
 
 
 
