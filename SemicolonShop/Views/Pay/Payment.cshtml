@@ -5,8 +5,14 @@
 <hr />
 
 <div class="card1">
-    <img class="img1" src="~/Img/credit_Front.png" />
-    <img class="img2" src="~/Img/credit_Back (1).png" />
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <img class="img1" src="~/Img/credit_Front.png" />
+        </div>
+        <div class="col-6">
+            <img class="img2" src="~/Img/credit_Back (1).png" />
+        </div>
+    </div>
     <div class="card2">
         <label class="font2">ธนาคาร</label>
         <select class="select" id="bank" name="bank">
@@ -23,9 +29,6 @@
             <option value="TCD">ธนาคารไทยเครดิตเพื่อรายย่อย (TCD)</option>
             <option value="LHFG">ธนาคารแลนด์แอนด์ เฮ้าส์ (LHFG)</option>
             <option value="ICBCT">ธนาคารสินเอเซีย (ICBCT)</option>
-            <option value="SME">ธนาคารพัฒนาวิสาหกิจขนาดกลางและขนาดย่อมแห่งประเทศไทย (SME)</option>
-            <option value="BAAC">ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร (ธกส.)</option>
-            <option value="EXIM">ธนาคารเพื่อการส่งออกและนำเข้าแห่งประเทศไทย (EXIM)</option>
             <option value="GSB">ธนาคารออมสิน (GSB)</option>
             <option value="GHB">ธนาคารอาคารสงเคราะห์ (GHB)</option>
             <option value="ISBT">ธนาคารอิสลามแห่งประเทศไทย (ISBT)</option>
@@ -41,20 +44,27 @@
     </div>
 </div>
 
-<button id="mybtn" class="con font">ยืนยัน</button>
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-    </div>
-
-</div>
-
-
+<button data-toggle="modal" data-target="#contactmodal" class="con font">ยืนยัน</button>
 <a class="cancel font" href="#cancel">ยกเลิก</a>
-<!-- The Modal -->
+<div class="container">
+    <div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <center>
+                        <p class="contactmodal1">
+                           ชำระเงินเรียบร้อยแล้ว
+                        </p>
+                        <p class="contactmodal2">
+                            ขอบคุณที่ใช้บริการ เราจะจัดส่งให้โดยเร็ว 
+                        </p>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="contactmodalbtn" data-dismiss="modal">Close</button>
+                    <a asp-action="home" style="color: #FFFFFF inherit; text-decoration:none;" type="button" class="contactmodalbtn">กลับสู่หน้าหลัก</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
