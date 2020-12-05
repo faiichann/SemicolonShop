@@ -541,6 +541,7 @@ input.inputchangepersonal {
     margin-top: -1%;
     float: right;
     margin-right: 15%;
+    border: 1.5px solid #4C251B;
 }
 
 input.changepassword {
@@ -548,6 +549,15 @@ input.changepassword {
     width: 70%;
     margin-top: -1%;
     float: right;
+    border: 1.5px solid #4C251B;
+}
+
+input.changeaddress {
+    display: inline;
+    width: 70%;
+    margin-top: -1%;
+    float: right;
+    border: 1.5px solid #4C251B;
 }
 
 input.submitchangepersonal {

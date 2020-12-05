@@ -1,7 +1,73 @@
-﻿
+﻿<link rel="stylesheet" href="~/css/profileuser.css" />
 @{
     ViewData["Title"] = "ChangeAddress";
 }
 
-<h1>ChangeAddress</h1>
+<div class="row justify-content-center">
+    <div class="col-3">
+        <div class="card1">
+            <div class="container">
+                <center>
+                    <img class="imgpersonal" src="~/lib/images/test.jpg" /><br />
+                    <a class="changeimage" href="#">แก้ไขรูปภาพ</a><br /><br />
+                    <a asp-action="Personal" class="profilelink">ข้อมูลส่วนตัว</a><br /><br /><br />
+                    <a asp-action="Address" class="profilelink">ที่อยู่ของฉัน</a><br /><br /><br />
+                    <a asp-action="Orderlist" class="profilelink">รายการสั่งซื้อ</a><br /><br /><br />
+                    <a asp-action="logout" class="profilelink">ออกจากระบบ</a><br />
+
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-9">
+        <div class="card2">
+            <div class="container">
+                <p class="hello">
+                    Hello,
+                </p>
+                <p class="profilenameID">
+                    INEEDSLEEP
+                </p><br />
+                <p class="profilepersonal">
+                    ที่อยู่สำหรับจัดส่ง
+                </p><br /><br />
+                <form asp-action="Address" method="post">
+                <p class="profilepersonaldetail">
+                    ชื่อ-นามสกุล
+                </p>
+                <input type="text" class="changeaddress" /><br /><br />
+                <p class="profilepersonaldetail">
+                    เบอร์โทรติดต่อ
+                </p>
+                <input type="text" class="changeaddress" /><br /><br />
+                <p class="profilepersonaldetail">
+                    ที่อยู่
+                </p>
+                <input type="text" class="changeaddress" /><br /><br />
+                <p class="profilepersonaldetail">
+                    แขวง/ตำบล
+                </p>
+                <input type="text" class="changeaddress" /><br /><br />
+                <p class="profilepersonaldetail">
+                    เขต/อำเภอ
+                </p>
+                <input type="text" class="changeaddress" /><br /><br />
+                <p class="profilepersonaldetail">
+                    จังหวัด
+                </p>
+                <input type="text" class="changeaddress" /><br /><br />
+                <p class="profilepersonaldetail">
+                    รหัสไปรษณีย์
+                </p>
+                <input type="text" class="changeaddress" /><br /><br />
+                    <input type="submit" class="submitchangepersonal" />
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
