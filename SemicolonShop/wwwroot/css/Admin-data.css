@@ -242,12 +242,12 @@ a.profilechangepassword {
 }
 @media screen and (max-width:769px) {
     .card1 {
-        width: 150%;
-        margin-left: -50%;
+        width: 100%;
+        margin-left: 2px;
     }
 
     .card2 {
-        width: 115%;
+        width: 100%;
         height: 95%;
     }
 
@@ -257,6 +257,16 @@ a.profilechangepassword {
 
     img.imgsavepersonal {
         margin-top: 24%;
+    }
+}
+@media screen and (max-width:768px) {
+    .card1 {
+        width: 100% !important;
+        margin-left: 2px !important;
+    }
+
+    .card2 {
+        width: 100% !important;
     }
 }
 @media screen and (max-width:640px) {

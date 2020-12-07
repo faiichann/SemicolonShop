@@ -30,7 +30,7 @@
                     </a>
                     <a class="navs" asp-area="" asp-controller="Home" asp-action=""><i class='fas fa-shopping-cart'></i></a>
                     <a class="navs" asp-area="" asp-controller="Home" asp-action=""><i class='fas fa-user-circle'></i></a>
-                    <a class="navs" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                    @*<a class="navs" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>*@
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
@@ -38,16 +38,17 @@
             </div>
         </div> 
     </header>
-    <div class="container">
+    <div class="container" >
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            <img style="width:100%; height:100%;" src="~/Img/Rectangle 2.png" />
-           @* &copy; 2020 - SemicolonShop - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>*@
+    <footer class="footers">
+        <div class="contain">
+            <a class="font fontfoot" asp-action=""><i class='fas fa-map-marker-alt'></i>Bangkok,Thailand</a>
+            <a class="font fontfoot" asp-action=""><i class='fas fa-phone'></i>099-2845594</a>
+            <a class="font fontfoot" asp-action=""><i class="fa fa-envelope"></i>semicolon@natural.com</a>
         </div>
     </footer>
     <script src="~/js/navbar.js"></script>
