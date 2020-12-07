@@ -3,11 +3,12 @@
     width: 200%;
     height: auto;
     float:left;
-    margin-left:-120px;
+    margin-left:-200px;
 }
 @media screen and (max-width:768px) {
     .img-logo {
-        margin-left: .5px !important;
+        width: 149% !important;
+        margin-left: 250px !important;
     }
  
 }
@@ -52,9 +53,9 @@
     .navs{
         margin-left:-270px;
     }
-    .img-logo{
-        width:100% !important;
-        
+    .img-logo {
+        width: 150% !important;
+        margin-left: 400px !important;  
     }
 }
 @media screen and (max-width:1024px){
@@ -127,7 +128,7 @@
     border: 0px solid #EFD89A;
     font-size: 18px;
     font-family: Kanit;
-    float: left;
+    float: right;
     color: #435E39;
     padding-top: 5px !important;
     padding-left: 10px !important;
@@ -246,4 +247,8 @@
 .fontfoot{
     text-decoration:none;
     padding-left:20%;
+}
+.fontfoot:hover{
+    text-decoration:none;
+    color:#435E39;
 }
