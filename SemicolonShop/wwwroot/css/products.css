@@ -40,23 +40,64 @@
 }
 
 .card {
-    width:80%;
-    border-radius:15px;
-    padding:10px;
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #EFD89A;
 }
 img.card-inner {
     height:150px;
-    object-fit:cover;
     border-radius:10px;
     width:100%;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom:5px;
+}
+
+p.productname {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 33px;
+    text-align: center;
+    color: #4C251B;
+}
+p.productprice1 {
+    display:inline;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8vw;
+    line-height: 30px;
+    float:left;
+}
+
+p.productprice2 {
+    display: inline;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8vw;
+    line-height: 30px;
+    float: right;
+}
+
+@media screen and (max-width:991px) {
+    .grid-container {
+        grid-template-columns :repeat(3, auto);
+    }
+}
+
+@media screen and (max-width:400px) {
+    .grid-container {
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
