@@ -1,0 +1,64 @@
+﻿body {
+
+}
+
+p.about-header {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.4vw;
+    line-height: 108px;
+    color: #435E39;
+    text-align:center;
+    margin-top:7%;
+}
+
+p.about-des {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5vw;
+    line-height: 174.5%;
+    text-align: center;
+    color: #435E39;
+}
+
+p.about-smile {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 72px;
+    color: #435E39;
+    text-align:center;
+    margin-top:4%;
+}
+
+img.aboutpic {
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    transition: transform .25s;
+    width:100%;
+}
+
+    img.aboutpic:hover {
+        -ms-transform: scale(1.08); /* IE 9 */
+        -webkit-transform: scale(1.08); /* Safari 3-8 */
+        transform: scale(1.08);
+    }
+
+.about-img-ourteam {
+    background-image: url('file:///C:\Users\JB\Documents\GitHub\SemicolonShop\SemicolonShop\wwwroot\lib\images\bgourteam.png');
+    )
+}
+
+p.about-our-header {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 72px;
+    text-align: center;
+    color: #435E39;
+}
