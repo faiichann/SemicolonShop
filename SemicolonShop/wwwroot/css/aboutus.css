@@ -49,16 +49,37 @@ img.aboutpic {
     }
 
 .about-img-ourteam {
-    background-image: url('file:///C:\Users\JB\Documents\GitHub\SemicolonShop\SemicolonShop\wwwroot\lib\images\bgourteam.png');
-    )
+    background-image: linear-gradient(rgba(0,0,0.4),rgba(0,0,0.4)),url(../lib/images/bgourteam.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    
 }
 
 p.about-our-header {
     font-family: Kanit;
     font-style: normal;
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 2.1vw;
     line-height: 72px;
     text-align: center;
     color: #435E39;
+    margin-top:5%;
+}
+
+.grid-container-aboutus {
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    padding:20px;
+}
+
+.card-ourteam {
+    width:100%;
+    background-color:#FFFFFF;
+}
+
+img.img-team {
+    width:100%;
+    border-radius:100%;
 }
