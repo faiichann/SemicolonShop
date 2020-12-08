@@ -104,21 +104,22 @@ p.about-duty {
 }
 
 p.about-teamdetail {
-    display:inline;
+    display: inline;
     font-family: Kanit;
     font-style: normal;
     font-weight: 300;
     font-size: 1vw;
     line-height: 174.5%;
     color: #435E39;
+    margin-left: 6%;
+    margin-top: -6%;
 }
 
 img.aboutimgicon {
-    display:inline;
     width: 10%;
     border-radius: 100%;
-    margin-left: 8%;
-    border:none;
-    margin-top:-8%;
+    border: none;
+    margin-top: -2%;
+    margin-right:3%;
 }
 
