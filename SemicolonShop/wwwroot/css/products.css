@@ -148,6 +148,11 @@ a.addcartbtn {
     display:none;
 }
 
+.shopbg {
+    background-attachment:fixed;
+    width:100%;
+}
+
 @media screen and (min-width:1351px) {
     .card {
         height:250px;
