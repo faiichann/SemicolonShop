@@ -68,7 +68,7 @@ hr.line {
     border: 5px solid #435E39;
 }
 .logo {
-    width: 40%;
+    width: 30%;
     margin-left: 2%;
     margin-top: 1%;
 }
@@ -99,9 +99,15 @@ hr.line {
     border: 1px solid #000000;
     border-radius: 20px;
 }
+.card5 {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
 .cardprice {
-    width: 120%;
-    margin-left: -30%;
+    width: 100%;
 }
 .cardTY {
     width: 80%;
@@ -133,15 +139,23 @@ input.payment:hover {
 
 }
 @media screen and (max-width:1199px){
-    .detailuser3{
-        margin-left:30%;
-    }
-    .detailuser2{
-        margin-left:50%;
-    }
     .logo {
-        width: 60%;
+        width: 30%;
         margin-top: 3%;
+    }
+}
+@media screen and (max-width:991px) {
+    .detailuser3{
+        font-size:12px;
+    }
+    .card5{
+        height:250px;
+    }
+    .fontprice{
+        margin-left:1%;
+    }
+    .cardprice{
+        width:100%;
     }
 }
 @media screen and (max-width:949px) {
@@ -153,17 +167,15 @@ input.payment:hover {
     .detailuser2 {
         margin-left: 20%;
     }
-    .card3{
-        height:250px;
-    }
-    .card4{
-        height:250px;
+
+    .card3 {
+        height: 270px;
     }
     .fontprice {
-        margin-left:10%;
+        margin-left: 10%;
     }
-    .font2{
-        margin-left:70%;
+    .font2 {
+        margin-left: 70%;
     }
 }
 @media screen and (max-width:767px) {
@@ -185,16 +197,36 @@ input.payment:hover {
     }
 
     .fontprice {
-        margin-left: 1%;
-        font-size: 13px;
+        margin-left: 1px;
+        font-size: 10px;
     }
     .font2 {
         margin-left: 65%;
         font-size: 20px;
     }
     .logo {
-        width: 70%;
+        width: 40%;
         margin-top: 8%;
+    }
+}
+@media screen and (max-width:570px) {
+    .detailuser1{
+        font-size:10px;
+    }
+    .detailnum1{
+        font-size:10px;
+    }
+    .detailnum2{
+        font-size:10px;
+    }
+    .fontprice{
+        font-size:10px;
+    }
+    .card3{
+        height:220px;
+    }
+    .logo{
+        width:40%;
     }
 }
 @media screen and (max-width:519px) {
@@ -211,6 +243,138 @@ input.payment:hover {
     .intable1{
         font-size:11px;
     }
+    .card5{
+        height:210px;
+    }
 }
+@media screen and (max-width:480px){
+    .card5{
+        height:230px;
+    }
+    .card4{
+        height:120px;
+    }
+}
+@media screen and (max-width:475px) {
+    .card5 {
+        height: 300px;
+    }
+}
+@media screen and (max-width:414px) {
+    .cardprice {
+        width: 130%;
+    }
+    .card5 {
+        height: 300px;
+    }
+}
+@media screen and (max-width:411px) {
+    .cardprice {
+        width: 130%;
+        margin-left: -20%;
+    }
+    .card5 {
+        height: 250px;
+        width: 80px;
+        margin-left: -15px;
+    }
+    .fontprice{
+        font-size:8px;
+    }
+}
+@media screen and (max-width:375px) {
+    .cardprice{
+        width:150%;
+    }
+}
+@media screen and (max-width:360px) {
+    .card5 {
+        height: 250px;
+        width: 80px;
+        margin-left: -15px;
+    }
+}
+@media screen and (max-width:320px) {
+    .card4{
+        height:150px;
+    }
+    .card3{
+        height:300px;
+    }
+    .card5{
+        margin-left:-30px;
+    }
+    .cardprice {
+        width: 190%;
+        margin-left: -35px;
+    }
+    .editfont1{
+        font-size:15px;
+    }
+    .editfont2{
+        font-size:10px;
+    }
+}
+@media screen and (max-width:290px) {
+    .editfont1 {
+        font-size: 15px;
+    }
+    .editfont2 {
+        font-size: 12px;
+    }
+    .card4 {
+        height: 160px;
+    }
+    .card3 {
+        height: 350px;
+    }
+    .card5 {
+        margin-left: -40px;
+    }
+    .cardprice {
+        width: 260%;
+        margin-left: -40px;
+    }
+    .intable1 {
+        font-size: 8px;
+    }
+    .top {
+        font-size: 8px;
+    }
+    .cardtable {
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:280px) {
+   .editfont1{
+       font-size:15px;
+   }
+   .editfont2{
+       font-size:12px;
+   }
+   .card4{
+       height:160px;
+   }
+   .card3{
+       height:350px;
+   }
+   .card5{
+       margin-left:-40px;
+   }
+   .cardprice{
+       width: 250%;
+       margin-left: -40px;
+   }
+   .intable1{
+       font-size:8px;
+   }
+   .top{
+       font-size:8px;
+   }
+   .cardtable{
+       margin-left:5%;
+   }
+}
+
 
 
