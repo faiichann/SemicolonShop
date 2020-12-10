@@ -657,8 +657,12 @@ a.cancel:hover {
     text-decoration:none;
     color:#ffffff;
 }
-
 .font {
     font-family: Kanit;
     padding-top: 50px;
 }
+.font2 {
+    font-family: Kanit;
+    font-size: 1vw;
+}
+
