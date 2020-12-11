@@ -1,0 +1,31 @@
+﻿th.orderth {
+    font-family:Kanit;
+    width: 1%;
+    display: table-cell;
+}
+table.ordertable {
+    height: 350px;
+    display: block;
+    overflow-y: auto;
+}
+.deletetable {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.intable1 {
+    font-family:Kanit;
+    text-align:center;
+    padding: 8px;
+}
+.topic:nth-child(even) {
+    background: #EFD89A;
+}
+.cardcart{
+    width:100%;
+    border:1px solid #000000;
+}
+input.numproduct{
+    width:60%;
+}
