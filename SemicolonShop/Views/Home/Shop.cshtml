@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-<div class="shopbg" style="background-image: url(../lib/images/bgspoon.png), url(../lib/images/bgfork.png), url(../lib/images/bgcabbage.png),url(../lib/images/bgboard.png);">
+<div class="shopbg" style="background-image: url(../lib/images/bgshop.png);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-8">
@@ -11,13 +11,13 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="~/lib/images/Bikesgray.jpg" class="d-block w-100" alt="...">
+                                <img src="~/lib/images/slide1.jpg" class="d-block w-100 imgslide" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="~/lib/images/Bikesgray.jpg" class="d-block w-100" alt="...">
+                                <img src="~/lib/images/slide2.jpg" class="d-block w-100 imgslide" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="~/lib/images/Bikesgray.jpg" class="d-block w-100" alt="...">
+                                <img src="~/lib/images/slide3.jpg" class="d-block w-100 imgslide" alt="...">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -36,7 +36,7 @@
         <br />
         <br />
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'Alls')">ทั้งหมด</button>
+            <button class="tablinks" onclick="openCity(event, 'Alls')" id="defaultOpen">ทั้งหมด</button>
             <button class="tablinks" onclick="openCity(event, 'Vegetables')">ผัก</button>
             <button class="tablinks" onclick="openCity(event, 'Meats')">เนื้อ</button>
         </div>
@@ -1331,3 +1331,7 @@
 
 </div>
           
+
+<script>
+    document.getElementById("defaultOpen").click();
+</script>
