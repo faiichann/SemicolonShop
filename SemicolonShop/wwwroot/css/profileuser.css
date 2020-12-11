@@ -212,6 +212,20 @@ p.profilepersonaldata {
     padding-right:16px;
     margin-top: -1%;
 }
+p.profileAddress {
+    display: inline;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 250%;
+    color: #4C251B;
+    float: right;
+    padding-right: 16px;
+    margin-top: -1%;
+    width: 40%;
+    word-break: break-all;
+}
 
 a.profilechangepassword {
     display: block;
@@ -225,8 +239,8 @@ a.profilechangepassword {
     float: right;
     color: #C36643;
     outline: none;
-    margin-top:-3.5%;
-    padding-right:16px;
+    margin-top: -3.5%;
+    padding-right: 16px;
 }
 
 
@@ -329,6 +343,9 @@ a.profilechangepassword {
     p.profilepersonaldata {
         font-size:1.7vw;
     }
+    p.profileAddress {
+        font-size:1.7vw;
+    }
     a.profilechangepassword {
         font-size: 1.3vw;
     }
@@ -401,6 +418,9 @@ a.profilechangepassword {
     p.profilepersonaldata {
         font-size: 1.9vw;
     }
+    p.profileAddress {
+        font-size: 1.9vw;
+    }
 
     a.profilechangepassword {
         font-size: 1.5vw;
@@ -467,6 +487,9 @@ a.profilechangepassword {
     p.profilepersonaldata {
         font-size: 2.2vw;
     }
+    p.profileAddress {
+        font-size: 2.2vw;
+    }
 
     a.profilechangepassword {
         font-size: 1.8vw;
@@ -519,6 +542,9 @@ a.profilechangepassword {
     p.profilepersonaldata {
         font-size: 1.5vw;
     }
+    p.profileAddress {
+        font-size: 1.5vw;
+    }
 
     a.profilechangepassword {
         font-size: 1.1vw;
@@ -562,6 +588,13 @@ input.changepassword {
 }
 
 input.changeaddress {
+    display: inline;
+    width: 70%;
+    margin-top: -1%;
+    float: right;
+    border: 1.5px solid #4C251B;
+}
+input.changeaddress2 {
     display: inline;
     width: 70%;
     margin-top: -1%;
