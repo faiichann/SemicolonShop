@@ -283,3 +283,11 @@ p.contactmodal2{
     color:#435E39;
     outline:none;
 }
+.bg {
+    height: 721px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+

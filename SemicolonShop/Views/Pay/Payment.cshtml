@@ -1,70 +1,79 @@
 ﻿<link rel="stylesheet" href="~/css/credit.css" />
 <script src="~/js/creditcard.js"></script>
 
-<h4 class="font">ชำระเงินด้วยบัตรเครดิต/บัตรเดบิต</h4>
-<hr />
+<body style="        background-image: url(../Img/bglogin00.png); height: 721px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+">
 
-<div class="card1">
-    <div class="row justify-content-center">
-        <div class="col-6">
-            <img class="img1" src="~/Img/credit_Front.png" />
+    <h4 class="font">ชำระเงินด้วยบัตรเครดิต/บัตรเดบิต</h4>
+    <hr />
+
+
+    <div class="card1">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <img class="img1" src="~/Img/credit_Front.png" />
+            </div>
+            <div class="col-6">
+                <img class="img2" src="~/Img/credit_Back (1).png" />
+            </div>
         </div>
-        <div class="col-6">
-            <img class="img2" src="~/Img/credit_Back (1).png" />
+        <div class="card2">
+            <label class="font2">ธนาคาร</label>
+            <select class="select" id="bank" name="bank">
+                <option value="BBL">ธนาคารกรุงเทพ (BBL)</option>
+                <option value="KBANK">ธนาคารกสิกรไทย (KBANK)</option>
+                <option value="KTB">ธนาคารกรุงไทย (KTB)</option>
+                <option value="TMB">ธนาคารทหารไทย(TMB)</option>
+                <option value="SCB">ธนาคารไทยพาณิชย์ (SCB)</option>
+                <option value="BAY">ธนาคารกรุงศรีอยุธยา (BAY)</option>
+                <option value="CIMBT">ธนาคารซีไอเอ็มบีไทย (CIMBT)</option>
+                <option value="TISCO">ธนาคารทิสโก้ (TISCO)</option>
+                <option value="TBANK">ธนาคารธนชาต (TBANK)</option>
+                <option value="UOBT">ธนาคารยูโอบี (UOBT)</option>
+                <option value="TCD">ธนาคารไทยเครดิตเพื่อรายย่อย (TCD)</option>
+                <option value="LHFG">ธนาคารแลนด์แอนด์ เฮ้าส์ (LHFG)</option>
+                <option value="ICBCT">ธนาคารสินเอเซีย (ICBCT)</option>
+                <option value="GSB">ธนาคารออมสิน (GSB)</option>
+                <option value="GHB">ธนาคารอาคารสงเคราะห์ (GHB)</option>
+                <option value="ISBT">ธนาคารอิสลามแห่งประเทศไทย (ISBT)</option>
+                <option value="CITI">ธนาคารซิตี้แบงค์ (CITI)</option>
+            </select>
+            <br />
+            <label class="font2">เลขหน้าบัตร 16 หลัก</label>
+            <input class="boxnum" type="text" id="num" name="16num" placeholder="xxxx-xxxx-xxxx-xxxx">
+            <br />
+            <label class="font2">รหัสหลังบัตร (CVV)</label>
+            <input class="boxnum1" type="text" id="num1" name="3num" placeholder="xxx">
+            <br />
         </div>
     </div>
-    <div class="card2">
-        <label class="font2">ธนาคาร</label>
-        <select class="select" id="bank" name="bank">
-            <option value="BBL">ธนาคารกรุงเทพ (BBL)</option>
-            <option value="KBANK">ธนาคารกสิกรไทย (KBANK)</option>
-            <option value="KTB">ธนาคารกรุงไทย (KTB)</option>
-            <option value="TMB">ธนาคารทหารไทย(TMB)</option>
-            <option value="SCB">ธนาคารไทยพาณิชย์ (SCB)</option>
-            <option value="BAY">ธนาคารกรุงศรีอยุธยา (BAY)</option>
-            <option value="CIMBT">ธนาคารซีไอเอ็มบีไทย (CIMBT)</option>
-            <option value="TISCO">ธนาคารทิสโก้ (TISCO)</option>
-            <option value="TBANK">ธนาคารธนชาต (TBANK)</option>
-            <option value="UOBT">ธนาคารยูโอบี (UOBT)</option>
-            <option value="TCD">ธนาคารไทยเครดิตเพื่อรายย่อย (TCD)</option>
-            <option value="LHFG">ธนาคารแลนด์แอนด์ เฮ้าส์ (LHFG)</option>
-            <option value="ICBCT">ธนาคารสินเอเซีย (ICBCT)</option>
-            <option value="GSB">ธนาคารออมสิน (GSB)</option>
-            <option value="GHB">ธนาคารอาคารสงเคราะห์ (GHB)</option>
-            <option value="ISBT">ธนาคารอิสลามแห่งประเทศไทย (ISBT)</option>
-            <option value="CITI">ธนาคารซิตี้แบงค์ (CITI)</option>
-        </select>
-        <br />
-        <label class="font2">เลขหน้าบัตร 16 หลัก</label>
-        <input class="boxnum" type="text" id="num" name="16num" placeholder="xxxx-xxxx-xxxx-xxxx">
-        <br />
-        <label class="font2">รหัสหลังบัตร (CVV)</label>
-        <input class="boxnum1" type="text" id="num1" name="3num" placeholder="xxx">
-        <br />
-    </div>
-</div>
 
-<button data-toggle="modal" data-target="#contactmodal" class="con font">ยืนยัน</button>
-<a class="cancel font" href="#cancel">ยกเลิก</a>
-<div class="container">
-    <div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <center>
-                        <p class="contactmodal1">
-                           ชำระเงินเรียบร้อยแล้ว
-                        </p>
-                        <p class="contactmodal2">
-                            ขอบคุณที่ใช้บริการ เราจะจัดส่งให้โดยเร็ว 
-                        </p>
-                    </center>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="contactmodalbtn" data-dismiss="modal">Close</button>
-                    <a asp-action="home" style="color: #FFFFFF inherit; text-decoration:none;" type="button" class="contactmodalbtn">กลับสู่หน้าหลัก</a>
+    <button data-toggle="modal" data-target="#contactmodal" class="con font">ยืนยัน</button>
+    <a class="cancel font" href="#cancel">ยกเลิก</a>
+    <div class="container">
+        <div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <center>
+                            <p class="contactmodal1">
+                                ชำระเงินเรียบร้อยแล้ว
+                            </p>
+                            <p class="contactmodal2">
+                                ขอบคุณที่ใช้บริการ เราจะจัดส่งให้โดยเร็ว
+                            </p>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="contactmodalbtn" data-dismiss="modal">Close</button>
+                        <a asp-action="home" style="color: #FFFFFF inherit; text-decoration:none;" type="button" class="contactmodalbtn">กลับสู่หน้าหลัก</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</body>
