@@ -61,16 +61,17 @@
     width:100%;
     background-size:100%;
     background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 .form-box {
     height: 430px;
     position: relative;
     margin: 6% auto;
-    background-color: #Eff1fe
+    background-color: #FFFFFF
 }
 
 .container {
-    padding-top:55px;
+    padding-top:15px;
 }
 
 .col-2 {
