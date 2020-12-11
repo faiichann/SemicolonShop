@@ -48,7 +48,7 @@ a.profilelink:hover {
     }
 .card2 {
     width: 100%;
-    height: 91%;
+    height: 95%;
     padding-top: 28px;
     border: 4px solid #926E50;
     border-radius: 15px;
@@ -541,7 +541,7 @@ th.orderth {
     display: table-cell;
 }
 table.ordertable {
-    height: 350px;
+    height: auto;
     display: block;
     overflow-y: auto;
 }
