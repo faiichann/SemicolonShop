@@ -57,9 +57,9 @@
 }
 
 .hero {
-    height:725px;
+    height:721px;
     width:100%;
-    background-size:100%;
+    background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
 }
