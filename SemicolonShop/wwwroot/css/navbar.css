@@ -121,20 +121,21 @@
     font-size: 18px;
     font-family: Kanit;
     float: right;
-    color: #435E39;
+    color: #435E39 !important;
     padding-top: 5px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
     padding-bottom: 5px !important;
     text-decoration: none;
     margin-top:5px;
+    width:150px;
 }
 .navss {
     border: 0px solid #EFD89A;
     font-size: 18px;
     font-family: Kanit;
     float: left;
-    color: #435E39;
+    color: #435E39 !important;
     padding-top: 3px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
@@ -232,18 +233,81 @@
         font-size: 10px !important;
     }
 }
+.contain {
+    background-color: #EFD89A;
+}
+.footers {
+    margin-top: 10%;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 80px;
+}
+.iconfooter {
+    display: inline;
+    color: #435E39;
+}
 .font {
     font-family: Kanit;
     padding-top: 50px;
     color: #435E39;
+    display: inline;
 }
-.fontfoot{
-    text-decoration:none;
-    padding-left:20%;
+.fontfoot {
+    text-decoration: none;
 }
-.fontfoot:hover{
-    text-decoration:none;
-    color:#435E39;
+.fontfoot:hover {
+        text-decoration: none;
+        color: #435E39;
+}
+.fa, .fas {
+    padding-right: 5%;
+}
+.col-4-footer {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-left: 160px;
+    margin-right: -5%;
+}
+@media screen and (max-width:1200px) {
+    .col-4-footer {
+        padding-left: 100px;
+    }
+}
+@media screen and (max-width:800px) {
+    .col-4-footer {
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width:768px) {
+    .footers {
+        margin-top: 15%;
+    }
+}
+@media screen and (max-width:580px) {
+    .font {
+        font-size: 2.2vw;
+    }
+
+    .footers {
+        margin-top: 20%;
+    }
+
+    .col-4-footer {
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width:400px) {
+    .col-4-footer {
+        padding-left: 15px;
+    }
+
+    .font {
+        font-size: 2.4vw;
+    }
 }
 .main_menu .navbar-brand {
     padding-top: 0rem;
@@ -263,7 +327,7 @@
     font-weight: 400;
 }
 .main_menu .main-menu-item ul li .nav-link:hover {
-        color: #000;
+    color: #000;
 }
 .main_menu .form-control:focus {
     box-shadow: none;
@@ -271,13 +335,13 @@
 .main_menu .active_color {
 
 }
-.main_menu a i {
+/*a i.main_menu  {
     color: #000;
     position: relative;
     z-index: 1;
     font-size: 15px;
     margin-left: 30px;
-}
+}*/
 .main_menu .cart .dropdown-toggle::after {
     display: inline-block;
     margin-left: .255em;
@@ -293,14 +357,20 @@
     top: 0;
 }
 .menu_fixed .active_color {
-    color: #fff !important;
+    /*color: #fff !important;*/
 }
-i .menu_icon {
+/*i.menu_icon {
     color: #000;
 }
 a i.main_menu   {
     margin-left: 13px;
-}
+}*/
 .main-menu-item {
     justify-content: center !important;
+}
+.navtop{
+    width:100%;
+}
+.navtopright{
+    width:100%;
 }
