@@ -7,7 +7,7 @@
 }
 @media screen and (max-width:768px) {
     .img-logo {
-        width: 149% !important;
+        width: 20% !important;
         margin-left: 250px !important;
     }
  
@@ -47,13 +47,13 @@
         margin-left:-270px;
     }
     .img-logo {
-        width: 150% !important;
+        width: 20% !important;
         margin-left: 400px !important;  
     }
 }
 @media screen and (max-width:1024px){
     .img-logo {
-        width: 150%;
+        width: 20%;
         height: auto;
         float: left;
         margin-left:.5px;
@@ -62,7 +62,7 @@
 }
 @media screen and (max-width:1200px) {
     .img-logo {
-        width: 150%;
+        width: 20%;
         height: auto;
         float: left;
         margin-left: .5px;
@@ -76,31 +76,34 @@
 }
 @media screen and (max-width:1350px) {
     .img-logo {
-        width: 100%;
+        width: 20%;
         height: auto;
         float: left;
         margin-left: .5px;
         margin-top:-5px;
     }
-
     .navss {
         padding-left: 100px !important;
-
+    }
+    .navs{
+        margin-left:-5px;
     }
 }
 @media screen and (max-width:1400px) {
     .img-logo {
-        width: 150%;
+        width: 18%;
         height: auto;
         float: left;
-        margin-left: .5px;
         margin-top: 10px;
     }
 
     .navss {
-        margin-left: 50px;
+        margin-left: 30px;
         margin-right: -35px;
-        font-size: 16px;
+        font-size: 16px !important;
+    }
+    .navs{
+        font-size:16px !important;
     }
     .search{
         margin-top:10px;
