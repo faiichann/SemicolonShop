@@ -5,12 +5,12 @@
     float:left;
     margin-left:-100px;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .img-logo {
-        width: 20% !important;
-        margin-left: 250px !important;
+        width: 25% !important;
+        margin-left: 200px !important;
     }
- 
+
 }
 @media screen and (max-width: 999px) {
     .topnav a:not(:first-child) {
@@ -41,14 +41,14 @@
         text-align: left;
     }
     .navss{
-        margin-left:88px !important;
-    }
-    .navs{
-        margin-left:-270px;
+        margin-left:300px !important;
     }
     .img-logo {
         width: 20% !important;
-        margin-left: 400px !important;  
+        margin-left: 300px !important;  
+    }
+    .topnav-right {
+        margin-left: 100% !important;
     }
 }
 @media screen and (max-width:1024px){
@@ -58,7 +58,12 @@
         float: left;
         margin-left:.5px;
     }
-  
+    .navs{
+        margin-left:-100px !important;
+    }
+    .topnav-right{
+        margin-left:100% !important;
+    }
 }
 @media screen and (max-width:1200px) {
     .img-logo {
@@ -73,6 +78,14 @@
         margin-right:35px;
         font-size:15px;
     }
+    .navs{
+        margin-left:-30px !important;
+    }
+}
+@media screen and (max-width:1250px) {
+  .navs{
+      margin-left:-20px !important;
+  }
 }
 @media screen and (max-width:1350px) {
     .img-logo {
@@ -86,7 +99,7 @@
         padding-left: 100px !important;
     }
     .navs{
-        margin-left:-5px;
+        margin-left:-5px !important;
     }
 }
 @media screen and (max-width:1400px) {
