@@ -48,7 +48,7 @@ a.profilelink:hover {
     }
 .card2 {
     width: 100%;
-    height: 95%;
+    height: 92%;
     padding-top: 28px;
     border: 4px solid #926E50;
     border-radius: 15px;
@@ -239,6 +239,9 @@ a.profilechangepassword {
         width: 100%;
         height: 95%;
     }
+    input.inputchangepersonal{
+        font-size:11px;
+    }
 }
 @media screen and (max-width:769px) {
     .card1 {
@@ -338,7 +341,7 @@ a.profilechangepassword {
     }
 
     input.inputchangepersonal {
-        width: 60% !important;
+        width: 50% !important;
     }
 }
 @media screen and (max-width:500px) {
@@ -354,31 +357,22 @@ a.profilechangepassword {
 @media screen and (max-width:383px) {
     .card1 {
         height: 70vh;
+        margin-left: 16px !important;
+        width: 120% !important;
+    }
+}
+@media screen and (max-width:380px) {
+    a.profilelink {
+        font-size: 1.1vw;
     }
 }
 @media screen and (max-width:350px) {
     .card1 {
-        width: 170%;
+        width: 170% !important;
     }
 
     .card2 {
-        width: 100%;
-    }
-
-    a.changeimage {
-        font-size: 1.4vw;
-    }
-
-    a.profilelink {
-        font-size: 1.6vw;
-    }
-
-    p.hello {
-        font-size: 2.5vw;
-    }
-
-    p.profilenameID {
-        font-size: 2.5vw;
+        width: 100% !important;
     }
 
     p.profilepersonal {
@@ -414,23 +408,14 @@ a.profilechangepassword {
         margin-left: 17%;
     }
 }
-@media screen and (max-width:380px) {
-    img.imgpersonal {
-        width: 120%;
-        margin-left: -10%;
-    }
 
-    a.profilelink {
-        font-size: 1.1vw;
-    }
-}
 @media screen and (max-width:300px) {
     .card1 {
-        width: 190%;
+        width: 190% !important;
     }
 
     .card2 {
-        width: 100%;
+        width: 100% !important;
     }
 
     a.changeimage {
@@ -480,29 +465,15 @@ a.profilechangepassword {
     input.changeaddress {
         width: 55%;
     }
+    input.inputchangepersonal {
+        margin-right:0% !important;
+    }
 }
 @media screen and (max-width:288px) {
     .card1 {
-        width: 230%;
+        width: 220% !important;
         margin-left: 0%;
     }
-
-    a.changeimage {
-        font-size: 0.9vw;
-    }
-
-    a.profilelink {
-        font-size: 1.2vw;
-    }
-
-    p.hello {
-        font-size: 2.1vw;
-    }
-
-    p.profilenameID {
-        font-size: 2.1vw;
-    }
-
     p.profilepersonal {
         font-size: 1.7vw;
     }
@@ -587,34 +558,7 @@ input.submitchangepersonal {
     margin-top: 7%;
     margin-left: 35%;
 }
-input.submitchangepersonal:hover {
-        background-color: #FFFFFF;
-        color: #4C251B;
-        outline: none;
-    }
-input.submitchangeaddress {
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1vw;
-    line-height: 30px;
-    text-align: center;
-    color: #FFFFFF;
-    border-radius: 30px;
-    background-color: #4C251B;
-    border: 2px solid #4C251B;
-    cursor: pointer;
-    padding-right: 10px;
-    padding-left: 10px;
-    outline: none;
-    margin-top: 0%;
-    margin-left: 40%;
-}
-input.submitchangeaddress:hover {
-        background-color: #FFFFFF;
-        color: #4C251B;
-        outline: none;
-    }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -665,4 +609,20 @@ a.cancel:hover {
     font-family: Kanit;
     font-size: 1vw;
 }
-
+a.edit {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: #EFF44A;
+    color: #000000;
+    width: 20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-decoration: none;
+    margin-left: 2%;
+}
+a.edit:hover {
+    background-color: #EFF1A9;
+    text-decoration:none;
+}
