@@ -209,6 +209,12 @@ a.profilechangepassword {
     margin-top: -3.5%;
     padding-right: 16px;
 }
+
+.admin-select {
+    width: 10%;
+    display: inline;
+    border: 1.5px solid #4C251B;
+}
 @media screen and (max-width:991px) {
     .card1 {
         width: 130%;
