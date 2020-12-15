@@ -1,4 +1,6 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Editing";
+}
 
 <div class="row justify-content-center">
     <div class="col-3">
@@ -28,10 +30,10 @@
                     <p class="profilepersonaldetail">
                         เลือกชนิดของสินค้า
                     </p>&nbsp;&nbsp;&nbsp;
-                    <input type="radio" id="veg" name="radio" value="ผัก">&nbsp;&nbsp;
-                    <label class="font2">ผัก</label>&nbsp;&nbsp;&nbsp;
-                    <input type="radio" id="meat" name="radio" value="เนื้อ">&nbsp;&nbsp;
-                    <label class="font2">เนื้อ</label>
+                    <select class="admin-select">
+                        <option value="Vegetable">ผัก</option>
+                        <option value="Meat">เนื้อ</option>
+                    </select>
                     <br /><br />
                     <p class="profilepersonaldetail">
                         รหัสสินค้า
